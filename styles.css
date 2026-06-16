@@ -98,8 +98,6 @@ a{text-decoration:none;color:inherit}
 
 /* STATS */
 .stats{display:flex;flex-direction:column;gap:30px;text-align:center}
-.about__photo{width:150px;height:150px;border-radius:50%;overflow:hidden;margin:0 auto 28px;border:4px solid #fff;box-shadow:0 10px 26px rgba(0,0,0,.14);background:#dfeee6}
-.about__photo img{width:100%;height:100%;object-fit:cover}
 .stats__item b{display:block;font-weight:900;font-size:54px;line-height:1;color:var(--coral)}
 .stats__item span{display:block;color:var(--muted);font-size:15px;margin-top:8px;max-width:320px;margin-left:auto;margin-right:auto}
 
