@@ -36,6 +36,7 @@ a{text-decoration:none;color:inherit}
 }
 .sh--blue{color:var(--blue)}
 .sub{text-align:center;color:var(--ink);font-size:16.5px;margin:-14px auto 24px;max-width:470px}
+.sub:last-child{margin-bottom:0}
 .hero__about{margin:8px 0 34px}
 
 /* BUTTONS */
