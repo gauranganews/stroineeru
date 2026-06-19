@@ -91,7 +91,7 @@ a{text-decoration:none;color:inherit}
 
 /* CHECKLIST — простые чёткие галочки */
 .checklist{list-style:none;display:flex;flex-direction:column;gap:15px}
-.checklist li{position:relative;padding-left:34px;font-size:16.5px;font-weight:500;color:var(--ink)}
+.checklist li{position:relative;padding-left:34px;font-size:16.5px;font-weight:500;color:var(--blue)}
 .checklist li::before{
   content:"✓";position:absolute;left:0;top:-1px;
   color:var(--blue);font-weight:800;font-size:20px;line-height:1.4;
@@ -129,12 +129,12 @@ a{text-decoration:none;color:inherit}
 .price__gift{margin-top:16px;font-size:15px;color:var(--ink)}
 .price__gift b{color:var(--ink)}
 
-/* BONUS — синий блок с галочками */
-.block--blue{background:var(--blue)}
-.block--blue .sh{color:#fff}
+/* BONUS — бледно-голубой блок с синими галочками */
+.block--blue{background:#dbe3fb}
+.block--blue .sh{color:var(--blue)}
 .meds{list-style:none;display:flex;flex-direction:column;gap:14px;max-width:490px;margin:0 auto}
-.meds li{position:relative;padding-left:36px;font-size:16.5px;font-weight:500;color:#fff;min-height:28px;display:flex;align-items:center}
-.meds li::before{content:"✓";position:absolute;left:0;top:50%;transform:translateY(-50%);color:#fff;font-weight:800;font-size:20px}
+.meds li{position:relative;padding-left:36px;font-size:18px;font-weight:500;color:var(--blue);min-height:28px;display:flex;align-items:center}
+.meds li::before{content:"✓";position:absolute;left:0;top:50%;transform:translateY(-50%);color:var(--blue);font-weight:800;font-size:22px}
 
 /* GALLERY */
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
