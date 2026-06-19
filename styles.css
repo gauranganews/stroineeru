@@ -35,9 +35,10 @@ a{text-decoration:none;color:inherit}
   letter-spacing:.01em;margin-bottom:26px;
 }
 .sh--blue{color:var(--blue)}
+.sh--red{color:var(--red)}
 .sub{text-align:center;color:var(--ink);font-size:16.5px;margin:-14px auto 24px;max-width:470px}
 .sub:last-child{margin-bottom:0}
-.hero__about{margin:8px 0 34px}
+.hero__about{margin:8px -22px 34px;background:var(--cream);padding:40px 22px}
 
 /* BUTTONS */
 .btn{
