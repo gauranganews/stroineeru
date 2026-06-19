@@ -100,12 +100,12 @@ a{text-decoration:none;color:inherit}
 
 /* WHAT WON'T BE — заголовок на синей плашке, ниже список */
 .block--wont{text-align:center}
-.block--wont .sh{display:inline-block;background:var(--blue);color:#fff;padding:11px 26px;border-radius:12px;margin-bottom:26px}
+.block--wont .sh{color:var(--blue)}
 .nolist{list-style:none;display:inline-flex;flex-direction:column;gap:14px;text-align:left}
-.nolist li{position:relative;padding-left:38px;font-size:17px;font-weight:600;color:var(--ink)}
+.nolist li{position:relative;padding-left:38px;font-size:17px;font-weight:600;color:var(--blue)}
 .nolist li::before{
   content:"✕";position:absolute;left:0;top:0;width:24px;height:24px;
-  background:#fbe2e3;color:var(--red);border-radius:50%;font-size:13px;font-weight:700;
+  background:#e0e4fb;color:var(--blue);border-radius:50%;font-size:13px;font-weight:700;
   display:flex;align-items:center;justify-content:center;
 }
 
