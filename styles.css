@@ -34,7 +34,9 @@ a{text-decoration:none;color:inherit}
   text-transform:uppercase;color:var(--red);text-align:center;
   letter-spacing:.01em;margin-bottom:26px;
 }
+.sh--blue{color:var(--blue)}
 .sub{text-align:center;color:var(--ink);font-size:16.5px;margin:-14px auto 24px;max-width:470px}
+.hero__about{margin:8px 0 6px}
 
 /* BUTTONS */
 .btn{
@@ -96,14 +98,14 @@ a{text-decoration:none;color:inherit}
 }
 .checklist__bonus{font-weight:700}
 
-/* WHAT WON'T BE — красный УТП-блок */
-.block--red{background:var(--red)}
-.block--red .sh{color:#fff}
-.nolist{list-style:none;display:flex;flex-direction:column;gap:14px}
-.nolist li{position:relative;padding-left:38px;font-size:17px;font-weight:600;color:#fff}
+/* WHAT WON'T BE — заголовок на синей плашке, ниже список */
+.block--wont{text-align:center}
+.block--wont .sh{display:inline-block;background:var(--blue);color:#fff;padding:11px 26px;border-radius:12px;margin-bottom:26px}
+.nolist{list-style:none;display:inline-flex;flex-direction:column;gap:14px;text-align:left}
+.nolist li{position:relative;padding-left:38px;font-size:17px;font-weight:600;color:var(--ink)}
 .nolist li::before{
   content:"✕";position:absolute;left:0;top:0;width:24px;height:24px;
-  background:rgba(255,255,255,.2);color:#fff;border-radius:50%;font-size:13px;font-weight:700;
+  background:#fbe2e3;color:var(--red);border-radius:50%;font-size:13px;font-weight:700;
   display:flex;align-items:center;justify-content:center;
 }
 
@@ -127,14 +129,12 @@ a{text-decoration:none;color:inherit}
 .price__gift{margin-top:16px;font-size:15px;color:var(--ink)}
 .price__gift b{color:var(--ink)}
 
-/* MEDS */
-.meds{list-style:none;counter-reset:m;display:flex;flex-direction:column;gap:13px;max-width:490px;margin:0 auto}
-.meds li{counter-increment:m;position:relative;padding-left:48px;font-size:16.5px;font-weight:500;color:var(--ink);min-height:34px;display:flex;align-items:center}
-.meds li::before{
-  content:counter(m,decimal-leading-zero);position:absolute;left:0;top:0;
-  width:34px;height:34px;background:var(--blue);color:#fff;border-radius:9px;
-  font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;
-}
+/* BONUS — синий блок с галочками */
+.block--blue{background:var(--blue)}
+.block--blue .sh{color:#fff}
+.meds{list-style:none;display:flex;flex-direction:column;gap:14px;max-width:490px;margin:0 auto}
+.meds li{position:relative;padding-left:36px;font-size:16.5px;font-weight:500;color:#fff;min-height:28px;display:flex;align-items:center}
+.meds li::before{content:"✓";position:absolute;left:0;top:50%;transform:translateY(-50%);color:#fff;font-weight:800;font-size:20px}
 
 /* GALLERY */
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
