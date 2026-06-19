@@ -1,0 +1,402 @@
+<!-- =========================================================
+     Мини-группа Елании Рэй — единый блок для Tilda (T123 «HTML-код»)
+     Просто вставьте ВЕСЬ этот код в HTML-блок Tilda.
+     Картинки и видео берутся по абсолютным ссылкам с вашего хостинга.
+     ========================================================= -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+#erlp{
+  --blue:#2236c9;--blue-dark:#1a29a0;--red:#d4202a;--red-dark:#b51820;
+  --ink:#111111;--line:#e2e6f5;--cream:#eef1fb;
+  font-family:'Montserrat',system-ui,sans-serif;color:var(--ink);
+  background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+#erlp *{box-sizing:border-box;margin:0;padding:0}
+#erlp [hidden]{display:none!important}
+#erlp img{max-width:100%;display:block}
+#erlp a{text-decoration:none;color:inherit}
+
+#erlp .topbar{height:8px;background:var(--blue)}
+#erlp .wrap{max-width:600px;margin:0 auto;background:#fff;overflow:hidden}
+
+#erlp .block{padding:48px 22px}
+#erlp .block--cream{background:var(--cream)}
+#erlp .sh{font-weight:800;font-size:clamp(25px,7vw,31px);line-height:1.15;text-transform:uppercase;color:var(--red);text-align:center;letter-spacing:.01em;margin-bottom:26px}
+#erlp .sh--blue{color:var(--blue)}
+#erlp .sub{text-align:center;color:var(--ink);font-size:16.5px;margin:-14px auto 24px;max-width:470px}
+#erlp .hero__about{margin:8px 0 34px}
+
+#erlp .btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--blue);color:#fff;font-weight:700;font-size:17.5px;padding:18px 24px;border:none;border-radius:10px;cursor:pointer;width:100%;transition:background .15s,transform .12s;text-align:center;font-family:inherit}
+#erlp .btn:hover{background:var(--blue-dark)}
+#erlp .btn:active{transform:scale(.99)}
+#erlp .btn--block{width:100%}
+#erlp .btn--pay{background:var(--red)}
+#erlp .btn--pay:hover{background:var(--red-dark)}
+#erlp .btn--outline{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+#erlp .btn--outline:hover{background:var(--blue);color:#fff}
+
+#erlp .btn--shine{position:relative;overflow:hidden}
+#erlp .btn--shine::after{content:"";position:absolute;top:0;left:-80%;width:55%;height:100%;background:linear-gradient(120deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 100%);transform:skewX(-22deg);animation:erlp-shine 3s ease-in-out infinite}
+@keyframes erlp-shine{0%{left:-80%}55%{left:130%}100%{left:130%}}
+
+#erlp .hero{padding:38px 22px 46px;text-align:center}
+#erlp .hero__avatar{width:170px;height:170px;border-radius:50%;overflow:hidden;margin:0 auto 26px;border:4px solid #fff;box-shadow:0 10px 30px rgba(34,54,201,.22);background:#eee}
+#erlp .hero__video{width:100%;height:100%;object-fit:cover}
+#erlp .eyebrow{color:var(--blue);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+#erlp .hero__title{font-weight:900;font-size:clamp(28px,8vw,40px);line-height:1.1;text-transform:uppercase;margin-bottom:16px;letter-spacing:-.01em;color:var(--ink)}
+#erlp .hero__sub{color:var(--ink);font-size:17px;max-width:470px;margin:0 auto 18px}
+
+#erlp .features{list-style:none;display:flex;flex-direction:column;gap:22px}
+#erlp .features li{display:flex;align-items:center;gap:18px;text-align:left}
+#erlp .features__ico{flex:0 0 auto;width:42px;height:42px;color:var(--blue);display:flex;align-items:center;justify-content:center}
+#erlp .features__ico svg{width:34px;height:34px}
+#erlp .features li p{font-size:17px;font-weight:500;color:var(--ink)}
+
+#erlp .checklist{list-style:none;display:flex;flex-direction:column;gap:15px}
+#erlp .checklist li{position:relative;padding-left:34px;font-size:16.5px;font-weight:500;color:var(--ink)}
+#erlp .checklist li::before{content:"✓";position:absolute;left:0;top:-1px;color:var(--blue);font-weight:800;font-size:20px;line-height:1.4}
+#erlp .checklist__bonus{font-weight:700}
+
+#erlp .block--wont{text-align:center}
+#erlp .block--wont .sh{display:inline-block;background:var(--blue);color:#fff;padding:11px 26px;border-radius:12px;margin-bottom:26px}
+#erlp .nolist{list-style:none;display:inline-flex;flex-direction:column;gap:14px;text-align:left}
+#erlp .nolist li{position:relative;padding-left:38px;font-size:17px;font-weight:600;color:var(--ink)}
+#erlp .nolist li::before{content:"✕";position:absolute;left:0;top:0;width:24px;height:24px;background:#fbe2e3;color:var(--red);border-radius:50%;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+#erlp .stats{display:flex;flex-direction:column;gap:30px;text-align:center}
+#erlp .stats__item b{display:block;font-weight:900;font-size:54px;line-height:1;color:var(--red)}
+#erlp .stats__item span{display:block;color:var(--ink);font-size:16px;margin-top:8px;max-width:330px;margin-left:auto;margin-right:auto}
+
+#erlp .price{border:1px solid var(--line);border-radius:18px;padding:30px 24px;text-align:center;box-shadow:0 10px 30px rgba(34,54,201,.08)}
+#erlp .price__name{font-weight:700;font-size:20px;margin-bottom:18px;color:var(--ink)}
+#erlp .price__row{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+#erlp .price__old{font-weight:800;font-size:40px;color:var(--ink)}
+#erlp .price__old.is-struck{font-size:25px;color:#7a7a7a;text-decoration:line-through;font-weight:700}
+#erlp .price__now{font-weight:900;font-size:48px;color:var(--red)}
+#erlp .price__badge{background:var(--red);color:#fff;font-weight:800;font-size:16px;padding:5px 12px;border-radius:30px}
+#erlp .timer{margin:14px 0 22px}
+#erlp .timer__label{color:var(--ink);font-size:15px;margin-bottom:6px}
+#erlp .timer__clock{font-weight:900;font-size:36px;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+#erlp #applyBtn{margin-top:14px}
+#erlp .price__gift{margin-top:16px;font-size:15px;color:var(--ink)}
+#erlp .price__gift b{color:var(--ink)}
+
+#erlp .block--blue{background:var(--blue)}
+#erlp .block--blue .sh{color:#fff}
+#erlp .meds{list-style:none;display:flex;flex-direction:column;gap:14px;max-width:490px;margin:0 auto}
+#erlp .meds li{position:relative;padding-left:36px;font-size:16.5px;font-weight:500;color:#fff;min-height:28px;display:flex;align-items:center}
+#erlp .meds li::before{content:"✓";position:absolute;left:0;top:50%;transform:translateY(-50%);color:#fff;font-weight:800;font-size:20px}
+
+#erlp .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+#erlp .gallery__item{padding:0;border:none;background:#eee;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;box-shadow:0 6px 18px rgba(0,0,0,.1)}
+#erlp .gallery__item img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+#erlp .gallery__item:hover img{transform:scale(1.05)}
+
+#erlp .footer{padding:28px 22px 36px;text-align:center;border-top:1px solid var(--line)}
+#erlp .footer__legal{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+#erlp .footer__legal a{color:#b3b3b3;font-size:13px}
+#erlp .footer__legal a:hover{color:var(--blue)}
+#erlp .footer__ip{color:#9a9a9e;font-size:12.5px}
+
+#erlp .lightbox{position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.92);display:flex;align-items:center;justify-content:center;padding:20px}
+#erlp .lightbox__img{max-width:100%;max-height:90vh;border-radius:8px;object-fit:contain}
+#erlp .lightbox__close{position:absolute;top:14px;right:18px;background:none;border:none;color:#fff;font-size:42px;line-height:1;cursor:pointer;z-index:2}
+#erlp .lightbox__nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.12);border:none;color:#fff;font-size:40px;width:54px;height:64px;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+#erlp .lightbox__nav:hover{background:rgba(255,255,255,.25)}
+#erlp .lightbox__nav--prev{left:14px}
+#erlp .lightbox__nav--next{right:14px}
+
+#erlp .modal{position:fixed;inset:0;z-index:100001;display:flex;align-items:center;justify-content:center;padding:20px}
+#erlp .modal__backdrop{position:absolute;inset:0;background:rgba(0,0,0,.55)}
+#erlp .modal__box{position:relative;background:#fff;border-radius:16px;max-width:520px;width:100%;padding:30px;max-height:85vh;overflow:auto}
+#erlp .modal__close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:30px;line-height:1;cursor:pointer;color:#777}
+#erlp .modal__title{font-weight:800;font-size:21px;margin-bottom:14px;color:var(--red);text-transform:uppercase}
+#erlp .modal__body{font-size:15.5px;color:var(--ink)}
+#erlp .modal__body p{margin-bottom:10px}
+
+@media(max-width:420px){
+  #erlp .lightbox__nav{width:44px;height:54px;font-size:32px}
+  #erlp .stats__item b{font-size:46px}
+}
+</style>
+
+<div id="erlp">
+  <div class="topbar"></div>
+  <div class="wrap">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__avatar">
+        <video class="hero__video" autoplay muted loop playsinline poster="https://gauranganews.github.io/stroineeru/assets/video/hero-poster.jpg">
+          <source src="https://gauranganews.github.io/stroineeru/assets/video/hero.webm" type="video/webm">
+          <source src="https://gauranganews.github.io/stroineeru/assets/video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="eyebrow">Мини-группа Елании Рэй</p>
+      <h1 class="hero__title">Сделай первый шаг к идеальной фигуре</h1>
+      <p class="hero__sub">Единственный марафон стройности без диет, где можно похудеть и вырасти в доходах.</p>
+      <div class="hero__about">
+        <h2 class="sh">Обо мне</h2>
+        <div class="stats">
+          <div class="stats__item"><b>10 лет</b><span>эксперт в коррекции пищевых расстройств</span></div>
+          <div class="stats__item"><b>−39 кг</b><span>сбросила сама</span></div>
+          <div class="stats__item"><b>99%</b><span>клиентов получают результат</span></div>
+          <div class="stats__item"><b>17 000</b><span>человек уже похудели</span></div>
+        </div>
+      </div>
+      <a href="#erlp-price" class="btn btn--block btn--shine">Записаться в мини-группу</a>
+    </section>
+
+    <!-- WHAT YOU GET -->
+    <section class="block">
+      <h2 class="sh">Что вы получите:</h2>
+      <ul class="features">
+        <li>
+          <span class="features__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></span>
+          <p>5 дней живых эфиров с Еланией Рэй</p>
+        </li>
+        <li>
+          <span class="features__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+          <p>Закрытый чат участниц и поддержка</p>
+        </li>
+        <li>
+          <span class="features__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg></span>
+          <p>Домашние задания с разбором</p>
+        </li>
+        <li>
+          <span class="features__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></span>
+          <p>Снижение веса до −4&nbsp;кг за 5 дней</p>
+        </li>
+        <li>
+          <span class="features__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <p>Личный план роста в доходах</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PROGRAM -->
+    <section class="block block--cream">
+      <h2 class="sh">Что мы разберём:</h2>
+      <ul class="checklist">
+        <li>Методика выбора живых продуктов — вы больше никогда не ошибётесь</li>
+        <li>Тестирование на расстройство пищевого поведения</li>
+        <li>Лёгкое внушающее воздействие</li>
+        <li>Распознавание стрессов и потребностей личности</li>
+        <li>Стоп «зажор», или как включить равнодушие к еде</li>
+        <li>Включим мотивацию на всю жизнь</li>
+        <li>Разберёмся, как связаны лишний вес и нехватка денег</li>
+        <li>Поймём, как вырасти в деньгах и составим схему финансовой растяжки</li>
+        <li>Докажу, что несгораемая сумма денег есть у каждой</li>
+        <li>Как найти время на себя, даже если всё семейство «висит» на вас</li>
+        <li class="checklist__bonus">Бонус: бизнес-чат «Jump» — как организовать бизнес «бижутерия»</li>
+        <li>Скидка 20% на «Основную кодирующую группу месяца» для участниц</li>
+      </ul>
+    </section>
+
+    <!-- WHAT WON'T BE -->
+    <section class="block block--wont">
+      <h2 class="sh">Чего не будет:</h2>
+      <ul class="nolist">
+        <li>Диет и меню</li>
+        <li>Спорта и чудо-БАДов</li>
+        <li>Нутрициологии</li>
+        <li>Наборов продуктов и подсчёта калорий</li>
+      </ul>
+    </section>
+
+    <!-- PRICE -->
+    <section class="block" id="erlp-price">
+      <h2 class="sh">Стоимость участия</h2>
+      <div class="price">
+        <p class="price__name">Мини-группа стройности</p>
+        <div class="price__row">
+          <span class="price__old" id="erlpPriceOld">10 000&nbsp;₽</span>
+          <span class="price__now" id="erlpPriceNow" hidden>3 000&nbsp;₽</span>
+          <span class="price__badge" id="erlpPriceBadge" hidden>−70%</span>
+        </div>
+        <div class="timer" id="erlpTimer" hidden>
+          <p class="timer__label">Цена действует ещё</p>
+          <div class="timer__clock"><span id="erlpTh">24</span>:<span id="erlpTm">00</span>:<span id="erlpTs">00</span></div>
+        </div>
+        <button class="btn btn--block" id="applyBtn">Применить скидку 70%</button>
+        <a class="btn btn--block btn--pay" id="erlpPayBtn" href="https://t.me/hudeem_tut" target="_blank" rel="noopener" hidden>Оплатить участие · 3 000&nbsp;₽</a>
+        <p class="price__gift">Оплатите сегодня — получите <b>10 мощных медитаций в подарок</b></p>
+      </div>
+    </section>
+
+    <!-- BONUS -->
+    <section class="block block--blue">
+      <h2 class="sh">Сразу после оплаты ты получишь. 10 медитаций в подарок</h2>
+      <ul class="meds">
+        <li>Наполнение женской энергией</li>
+        <li>Стройность и омоложение</li>
+        <li>Медитация твоего утра</li>
+        <li>Программирую себя на успех</li>
+        <li>Медитация изобилия</li>
+        <li>Медитация контроль аппетита</li>
+        <li>Прощение обид</li>
+        <li>Поиск силы</li>
+        <li>Медитация на успешного мужчину</li>
+        <li>Загадываем желание на день рождения правильно</li>
+      </ul>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="block">
+      <h2 class="sh">Результаты участниц</h2>
+      <p class="sub">Нажмите на фото, чтобы открыть в полном размере</p>
+      <div class="gallery" id="erlpGallery">
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-1.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-2.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-3.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-4.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-5.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-6.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-7.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-8.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-9.jpg" alt="Результат до и после" loading="lazy"></button>
+        <button class="gallery__item"><img src="https://gauranganews.github.io/stroineeru/assets/img/review-10.jpg" alt="Результат до и после" loading="lazy"></button>
+      </div>
+      <a href="https://t.me/otzovi_elanii" target="_blank" rel="noopener" class="btn btn--block btn--outline">Читать больше отзывов в Telegram</a>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="block block--cream">
+      <h2 class="sh sh--blue">Остались вопросы?</h2>
+      <p class="sub">Если у вас остались вопросы по курсу или проблемы с оплатой, то свяжитесь с нами. Мы обязательно поможем вам.</p>
+      <a href="https://t.me/hudeem_tut" target="_blank" rel="noopener" class="btn btn--block">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M21.9 4.3l-3.3 15.5c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5L20.4 3c.9-.3 1.7.2 1.5 1.3z"/></svg>
+        Написать в Telegram
+      </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <nav class="footer__legal">
+        <a href="#" data-modal="security">Безопасность</a>
+        <a href="#" data-modal="oferta">Договор оферты</a>
+        <a href="#" data-modal="privacy">Политика конфиденциальности</a>
+      </nav>
+      <p class="footer__ip">ИП Темников Дмитрий Павлович · ИНН&nbsp;420228273076</p>
+    </footer>
+
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="erlpLightbox" hidden>
+    <button class="lightbox__close" id="erlpLbClose" aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="erlpLbPrev" aria-label="Назад">‹</button>
+    <img class="lightbox__img" id="erlpLbImg" src="" alt="Результат до и после">
+    <button class="lightbox__nav lightbox__nav--next" id="erlpLbNext" aria-label="Вперёд">›</button>
+  </div>
+
+  <!-- LEGAL MODAL -->
+  <div class="modal" id="erlpModal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close aria-label="Закрыть">×</button>
+      <h3 id="erlpModalTitle" class="modal__title"></h3>
+      <div id="erlpModalBody" class="modal__body"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('erlp');
+  if (!root) return;
+
+  // ---- Smooth scroll for internal links ----
+  root.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href');
+      if (id.length > 1) {
+        var el = document.getElementById(id.slice(1));
+        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      }
+    });
+  });
+
+  // ---- Discount countdown timer (10 000 -> 3 000 for 24h) ----
+  (function () {
+    var DURATION = 24 * 60 * 60 * 1000;
+    var KEY = 'elania_discount_deadline';
+    var applyBtn = document.getElementById('applyBtn');
+    var payBtn = document.getElementById('erlpPayBtn');
+    var timer = document.getElementById('erlpTimer');
+    var priceOld = document.getElementById('erlpPriceOld');
+    var priceNow = document.getElementById('erlpPriceNow');
+    var priceBadge = document.getElementById('erlpPriceBadge');
+    var th = document.getElementById('erlpTh'), tm = document.getElementById('erlpTm'), ts = document.getElementById('erlpTs');
+    var interval = null;
+    function pad(n) { return String(n).padStart(2, '0'); }
+    function activate() { applyBtn.hidden = true; payBtn.hidden = false; timer.hidden = false; priceNow.hidden = false; priceBadge.hidden = false; priceOld.classList.add('is-struck'); }
+    function reset() { applyBtn.hidden = false; payBtn.hidden = true; timer.hidden = true; priceNow.hidden = true; priceBadge.hidden = true; priceOld.classList.remove('is-struck'); }
+    function tick(deadline) {
+      var left = deadline - Date.now();
+      if (left <= 0) { clearInterval(interval); localStorage.removeItem(KEY); reset(); return; }
+      th.textContent = pad(Math.floor(left / 3600000));
+      tm.textContent = pad(Math.floor((left % 3600000) / 60000));
+      ts.textContent = pad(Math.floor((left % 60000) / 1000));
+    }
+    function start(deadline) { activate(); tick(deadline); clearInterval(interval); interval = setInterval(function () { tick(deadline); }, 1000); }
+    var saved = parseInt(localStorage.getItem(KEY), 10);
+    if (saved && saved > Date.now()) start(saved);
+    applyBtn.addEventListener('click', function () {
+      var deadline = Date.now() + DURATION;
+      localStorage.setItem(KEY, String(deadline));
+      start(deadline);
+      document.getElementById('erlp-price').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  })();
+
+  // ---- Reviews lightbox (fullscreen) ----
+  (function () {
+    var gallery = document.getElementById('erlpGallery');
+    var lb = document.getElementById('erlpLightbox');
+    var lbImg = document.getElementById('erlpLbImg');
+    var srcs = Array.prototype.map.call(gallery.querySelectorAll('img'), function (i) { return i.getAttribute('src'); });
+    var idx = 0;
+    function show(i) { idx = (i + srcs.length) % srcs.length; lbImg.src = srcs[idx]; }
+    function open(i) { show(i); lb.hidden = false; document.body.style.overflow = 'hidden'; }
+    function close() { lb.hidden = true; document.body.style.overflow = ''; }
+    gallery.querySelectorAll('.gallery__item').forEach(function (btn, i) { btn.addEventListener('click', function () { open(i); }); });
+    document.getElementById('erlpLbClose').addEventListener('click', close);
+    document.getElementById('erlpLbPrev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+    document.getElementById('erlpLbNext').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') show(idx - 1);
+      if (e.key === 'ArrowRight') show(idx + 1);
+    });
+    var x0 = null;
+    lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) show(dx < 0 ? idx + 1 : idx - 1);
+      x0 = null;
+    });
+  })();
+
+  // ---- Legal modals ----
+  (function () {
+    var modal = document.getElementById('erlpModal');
+    var title = document.getElementById('erlpModalTitle');
+    var body = document.getElementById('erlpModalBody');
+    var content = {
+      security: { t: 'Безопасность', h: '<p>Оплата проходит через защищённое соединение. Мы не храним данные ваших банковских карт.</p><p>Все персональные данные обрабатываются в соответствии с действующим законодательством РФ.</p>' },
+      oferta: { t: 'Договор оферты', h: '<p>Настоящий документ является публичной офертой ИП Темников Дмитрий Павлович (ИНН&nbsp;420228273076) на оказание информационно-консультационных услуг «Мини-группа стройности».</p><p>Оплачивая участие, вы соглашаетесь с условиями оферты. Услуга считается оказанной после проведения марафона.</p>' },
+      privacy: { t: 'Политика конфиденциальности', h: '<p>Мы собираем минимально необходимые данные (контакт для связи) исключительно для оказания услуги и обратной связи.</p><p>Данные не передаются третьим лицам. По вопросам обработки данных пишите нам в Telegram.</p>' }
+    };
+    function open(key) { var c = content[key]; if (!c) return; title.innerHTML = c.t; body.innerHTML = c.h; modal.hidden = false; document.body.style.overflow = 'hidden'; }
+    function close() { modal.hidden = true; document.body.style.overflow = ''; }
+    root.querySelectorAll('[data-modal]').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); open(a.getAttribute('data-modal')); }); });
+    modal.querySelectorAll('[data-close]').forEach(function (el) { el.addEventListener('click', close); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
+  })();
+})();
+</script>
